@@ -1,0 +1,4 @@
+- insert:
+    - id: token-stats
+      name: '@local/token-stats'
+      config: {}

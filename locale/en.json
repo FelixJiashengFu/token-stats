@@ -1,0 +1,6 @@
+{
+  "meta": {
+    "title": "Token Stats",
+    "description": "Statistics folded from your real session logs: total token usage, session counts, estimated cost and monthly budget from editable prices, a token-consumption timeline, per-session usage and cost, per-model breakdown, and host CPU runtime/utilization monitoring."
+  }
+}
