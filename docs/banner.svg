@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="360" viewBox="0 0 1280 360" role="img" aria-labelledby="title desc">
+  <title id="title">Token Stats — 看清每一次 AI 对话的消耗</title>
+  <desc id="desc">深色项目封面，展示真实用量、成本估算、月度预算三个功能关键词。右侧是装饰性的同心圆图形，并非产品截图或使用数据。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#0b1720"/>
+      <stop offset="1" stop-color="#102c2a"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="1" x2="1" y2="0">
+      <stop stop-color="#34d399"/>
+      <stop offset="1" stop-color="#a7f3d0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="360" rx="22" fill="url(#bg)"/>
+  <g fill="none" stroke="#a7f3d0" opacity=".055">
+    <path d="M0 90H1280M0 180H1280M0 270H1280M160 0V360M320 0V360M480 0V360M640 0V360M800 0V360M960 0V360M1120 0V360"/>
+  </g>
+  <g font-family="Segoe UI, PingFang SC, Microsoft YaHei, sans-serif">
+    <rect x="66" y="48" width="218" height="28" rx="14" fill="#193f38"/>
+    <circle cx="83" cy="62" r="4" fill="#6ee7b7"/>
+    <text x="96" y="67" fill="#a7f3d0" font-size="12" letter-spacing="1.1">FOR DEEPSEEK HARNESS</text>
+    <text x="64" y="153" fill="#f0fdf4" font-size="64" font-weight="700" letter-spacing="-2">Token Stats</text>
+    <text x="68" y="208" fill="#d1fae5" font-size="28" font-weight="500">看清每一次 AI 对话的消耗</text>
+    <text x="68" y="260" fill="#a7bdb9" font-size="17">真实用量</text>
+    <circle cx="157" cy="254" r="2" fill="#3e6c61"/>
+    <text x="180" y="260" fill="#a7bdb9" font-size="17">成本估算</text>
+    <circle cx="269" cy="254" r="2" fill="#3e6c61"/>
+    <text x="292" y="260" fill="#a7bdb9" font-size="17">月度预算</text>
+    <text x="68" y="316" fill="#74918a" font-size="12" letter-spacing="1.6">YOUR SESSIONS. YOUR USAGE. IN VIEW.</text>
+  </g>
+  <g transform="translate(1050 180)" fill="none">
+    <circle r="137" stroke="#20443c"/>
+    <circle r="109" stroke="#1c493f" stroke-width="19"/>
+    <circle r="109" stroke="url(#accent)" stroke-width="19" stroke-dasharray="465 220" stroke-linecap="round" transform="rotate(-90)"/>
+    <circle r="73" stroke="#214d43" stroke-width="14"/>
+    <circle r="73" stroke="#5eead4" stroke-width="14" stroke-dasharray="273 186" stroke-linecap="round" transform="rotate(-90)" opacity=".8"/>
+    <circle r="42" stroke="#214d43" stroke-width="10"/>
+    <circle r="42" stroke="#d1fae5" stroke-width="10" stroke-dasharray="113 151" stroke-linecap="round" transform="rotate(-90)" opacity=".9"/>
+    <circle r="7" fill="#a7f3d0"/>
+  </g>
+</svg>
