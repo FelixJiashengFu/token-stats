@@ -1,5 +1,5 @@
 /**
- * Host half of @local/token-stats.
+ * Host half of @jiashengfu/token-stats.
  *
  * Aggregates REAL token usage from the durable session logs (through the
  * `sessionQuery` service — the same logs the official `tokenUsage`

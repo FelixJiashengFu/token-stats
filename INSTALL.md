@@ -2,7 +2,27 @@
 
 把真实 Token 用量、会话排行、成本估算和月度预算，放进 DeepSeek Harness 的侧边栏。
 
-**[下载 ZIP](https://github.com/FelixJiashengFu/token-stats/archive/refs/heads/main.zip)** · **[返回项目介绍](README.md)**
+**[npm 包](https://www.npmjs.com/package/@jiashengfu/token-stats)** · **[下载 ZIP](https://github.com/FelixJiashengFu/token-stats/archive/refs/heads/main.zip)** · **[返回项目介绍](README.md)**
+
+## 通过 npm 安装（推荐）
+
+已安装 Harness 的 `dsh` CLI 时，运行：
+
+```bash
+dsh plugin --profile web add @jiashengfu/token-stats
+```
+
+将 `web` 替换为实际使用的 profile 名称；插件只安装到指定 profile。安装后重启对应 profile，并刷新界面。
+
+若已安装旧的 `@local/token-stats`，请先在同一 profile 中移除旧插件，避免两个版本重复注册同一面板与接口。新包名为 `@jiashengfu/token-stats`，浏览器设置使用的存储键保持不变。
+
+如需固定此版本，可使用：
+
+```bash
+dsh plugin --profile web add @jiashengfu/token-stats@1.8.1
+```
+
+没有 CLI 或希望使用本地文件夹时，按下面的步骤安装。
 
 ## 1. 确认运行环境
 
@@ -77,7 +97,7 @@ git clone https://github.com/FelixJiashengFu/token-stats.git
 | 遇到的情况 | 可以先这样检查 |
 | --- | --- |
 | 安装时找不到插件文件 | 确认所选目录内直接包含 `package.json` 与 `cordis.patch.yml`，没有多套一层文件夹 |
-| 安装后没有入口 | 刷新页面，并在插件管理中确认 `@local/token-stats` 已启用；再检查宿主是否支持本地插件 |
+| 安装后没有入口 | 刷新页面，并在插件管理中确认 `@jiashengfu/token-stats` 已启用；再检查宿主是否支持本地插件 |
 | 首次打开还没有完整统计 | 查看索引进度并等待完成；大量历史日志需要更长时间 |
 | 某些会话用量为空 | 确认 Harness 仍保留对应日志，且服务商响应中包含用量数据；插件不能补回缺失记录 |
 | 某些模型显示「未计价」 | 当前内置表没有匹配该模型或请求时段的规则；可查看价格文件或使用自定义单价模式 |
@@ -88,9 +108,17 @@ git clone https://github.com/FelixJiashengFu/token-stats.git
 
 ## 更新与卸载
 
-**更新：** 下载新版并解压到新的文件夹，再通过宿主提供的更新或本地安装入口加载。若宿主不支持直接替换同名插件，可先移除旧插件再安装新版；请保留原文件夹，便于需要时回退。
+**更新 npm 安装：** 将命令中的 `web` 替换为实际 profile 名称，再运行：
 
-**卸载：** 在插件管理中移除 `@local/token-stats`，刷新页面。插件不会删除你的会话记录。
+```bash
+dsh plugin --profile web add @jiashengfu/token-stats@latest
+```
+
+更新后重启对应 profile 并刷新界面。
+
+**更新本地安装：** 下载新版并解压到新的文件夹，再通过宿主提供的更新或本地安装入口加载。若宿主不支持直接替换同名插件，可先移除旧插件再安装新版；请保留原文件夹，便于需要时回退。
+
+**卸载：** 在插件管理中移除 `@jiashengfu/token-stats`，刷新页面。插件不会删除你的会话记录。
 
 ## 数据与访问范围
 

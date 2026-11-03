@@ -1,6 +1,6 @@
 <div align="center">
 
-![Token Stats — 看清每一次 AI 对话的消耗](docs/banner.svg)
+![Token Stats — 看清每一次 AI 对话的消耗](https://raw.githubusercontent.com/FelixJiashengFu/token-stats/main/docs/banner.svg)
 
 # Token Stats
 
@@ -9,11 +9,12 @@
 为 DeepSeek Harness 打造的会话统计插件。把真实 Token 用量、成本估算、月度预算和系统状态，放进你每天使用的侧边栏。
 
 ![版本 1.8.1](https://img.shields.io/badge/version-1.8.1-10b981?style=flat-square)
+[![npm](https://img.shields.io/npm/v/%40jiashengfu%2Ftoken-stats?style=flat-square&color=10b981)](https://www.npmjs.com/package/@jiashengfu/token-stats)
 ![适用于 DeepSeek Harness](https://img.shields.io/badge/for-DeepSeek_Harness-334155?style=flat-square)
 ![Windows 与 macOS](https://img.shields.io/badge/platform-Windows_%7C_macOS-334155?style=flat-square)
 ![中文与英文](https://img.shields.io/badge/language-中文_%7C_English-334155?style=flat-square)
 
-**[下载插件 ZIP](https://github.com/FelixJiashengFu/token-stats/archive/refs/heads/main.zip)** · **[安装指南](INSTALL.md)** · **[反馈问题](https://github.com/FelixJiashengFu/token-stats/issues)**
+**[npm 安装](https://www.npmjs.com/package/@jiashengfu/token-stats)** · **[下载插件 ZIP](https://github.com/FelixJiashengFu/token-stats/archive/refs/heads/main.zip)** · **[安装指南](INSTALL.md)** · **[反馈问题](https://github.com/FelixJiashengFu/token-stats/issues)**
 
 </div>
 
@@ -47,7 +48,17 @@
 
 从左侧栏进入 **Token 统计**，展开会话明细、切换时间范围、比较模型，并调整预算与自定义单价。适合回看一个项目、一段密集使用期，或一次特别长的对话。
 
-## 三步开始使用
+## 一条命令安装
+
+已安装 Harness 的 `dsh` CLI？将插件安装到你正在使用的 profile：
+
+```bash
+dsh plugin --profile web add @jiashengfu/token-stats
+```
+
+将 `web` 替换为你实际使用的 profile 名称。安装后重启对应 profile，并刷新界面。若已安装旧的 `@local/token-stats`，请先在同一 profile 中移除旧插件，避免两个版本重复注册同一面板与接口。
+
+## 也可以下载 ZIP，三步开始使用
 
 **前提：已安装并运行支持本地插件安装的 DeepSeek Harness。** Token Stats 是 Harness 插件，需要宿主环境运行。
 
@@ -143,8 +154,8 @@ git clone https://github.com/FelixJiashengFu/token-stats.git
 
 **下一次打开 Harness，也看看你的 Token 去了哪里。**
 
-**[下载 Token Stats](https://github.com/FelixJiashengFu/token-stats/archive/refs/heads/main.zip)** · **[查看安装指南](INSTALL.md)**
+**[从 npm 安装](https://www.npmjs.com/package/@jiashengfu/token-stats)** · **[下载 Token Stats](https://github.com/FelixJiashengFu/token-stats/archive/refs/heads/main.zip)** · **[查看安装指南](INSTALL.md)**
 
-<sub>Token Stats · @local/token-stats · v1.8.1</sub>
+<sub>Token Stats · @jiashengfu/token-stats · v1.8.1</sub>
 
 </div>

@@ -1,5 +1,5 @@
 /**
- * Client half of @local/token-stats.
+ * Client half of @jiashengfu/token-stats.
  *
  * Surfaces:
  * - a right-sidebar tab (betterSidebar registerTab when available, native
@@ -15,7 +15,7 @@
  * and persisted in localStorage; every money figure is an estimate.
  */
 window.__ModuleLoader__.load({
-  id: '@local/token-stats',
+  id: '@jiashengfu/token-stats',
   factory(require) {
     const React = require('react');
     const h = React.createElement;

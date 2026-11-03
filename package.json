@@ -1,9 +1,8 @@
 {
-  "name": "@local/token-stats",
+  "name": "@jiashengfu/token-stats",
   "version": "1.8.1",
-  "private": true,
   "type": "module",
-  "description": "Real session statistics: total token usage, session counts, estimated cost and monthly budget, token timeline, per-session usage/cost, and host CPU monitoring — all folded from your actual session logs.",
+  "description": "A DeepSeek Harness dashboard for real session token usage, per-session costs, monthly budgets, and CPU/memory monitoring.",
   "exports": {
     ".": "./index.js",
     "./client": "./client.js",
@@ -18,7 +17,9 @@
     "cordis.patch.yml",
     "locale/*.json",
     "icon.svg",
-    "INSTALL.md"
+    "INSTALL.md",
+    "CHANGELOG.md",
+    "docs/banner.svg"
   ],
   "dsh": {
     "bundle": {
@@ -31,5 +32,27 @@
         "@deepseek-ai/dsh-client-ui-conversation"
       ]
     }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FelixJiashengFu/token-stats.git"
+  },
+  "homepage": "https://github.com/FelixJiashengFu/token-stats#readme",
+  "bugs": {
+    "url": "https://github.com/FelixJiashengFu/token-stats/issues"
+  },
+  "keywords": [
+    "deepseek",
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "token-usage",
+    "cost-tracking",
+    "budget",
+    "monitoring"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
   }
 }

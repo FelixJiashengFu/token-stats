@@ -1,4 +1,4 @@
 - insert:
     - id: token-stats
-      name: '@local/token-stats'
+      name: '@jiashengfu/token-stats'
       config: {}

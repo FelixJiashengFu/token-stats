@@ -1,5 +1,5 @@
 /**
- * Pure fold/aggregate core for @local/token-stats.
+ * Pure fold/aggregate core for @jiashengfu/token-stats.
  *
  * Folds durable session-log events (the same `{ seq, time, type, data }`
  * envelopes the harness TokenMeter projection consumes) into per-session

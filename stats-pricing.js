@@ -1,5 +1,5 @@
 /**
- * Official vendor pricing for @local/token-stats, with provenance.
+ * Official vendor pricing for @jiashengfu/token-stats, with provenance.
  *
  * Every price below was read from the vendor's own published pricing page
  * (fetched 2026-11-02) and, where a price changed inside the user's data
